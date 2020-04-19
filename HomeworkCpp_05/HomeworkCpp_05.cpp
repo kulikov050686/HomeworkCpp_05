@@ -1,4 +1,4 @@
-﻿#include "HomeWork.h"
+#include "HomeWork.h"
 
 int main()
 {

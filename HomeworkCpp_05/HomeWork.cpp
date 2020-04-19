@@ -88,28 +88,28 @@ std::string HomeWork::DayWeek(int day)
 	switch (day)
 	{
 	case 1:
-		strDay = "ïîíåäåëüíèê";
+		strDay = "Ð¿Ð¾Ð½ÐµÐ´ÐµÐ»ÑŒÐ½Ð¸Ðº";
 		break;
 	case 2:
-		strDay = "âòîðíèê";
+		strDay = "Ð²Ñ‚Ð¾Ñ€Ð½Ð¸Ðº";
 		break;
 	case 3:
-		strDay = "ñðåäà";
+		strDay = "ÑÑ€ÐµÐ´Ð°";
 		break;
 	case 4:
-		strDay = "÷åòâåðã";
+		strDay = "Ñ‡ÐµÑ‚Ð²ÐµÑ€Ð³";
 		break;
 	case 5:
-		strDay = "ïÿòíèöà";
+		strDay = "Ð¿ÑÑ‚Ð½Ð¸Ñ†Ð°";
 		break;
 	case 6:
-		strDay = "ñóááîòà";
+		strDay = "ÑÑƒÐ±Ð±Ð¾Ñ‚Ð°";
 		break;
 	case 7:
-		strDay = "âîñêðåñåíüå";
+		strDay = "Ð²Ð¾ÑÐºÑ€ÐµÑÐµÐ½ÑŒÐµ";
 		break;
 	default:
-		strDay = "Òàêîãî äíÿ íåäåëè íå ñóùåñòâóåò!";
+		strDay = "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð´Ð½Ñ Ð½ÐµÐ´ÐµÐ»Ð¸ Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 		break;
 	}
 	
@@ -128,125 +128,125 @@ std::string HomeWork::MonthYear(int monthNumber, bool key)
 	case 1:
 		if (key)
 		{
-			month = "ÿíâàðü";
+			month = "ÑÐ½Ð²Ð°Ñ€ÑŒ";
 		}
 		else
 		{
-			month = "ÿíâàðÿ";
+			month = "ÑÐ½Ð²Ð°Ñ€Ñ";
 		}
 		break;
 	case 2:
 		if (key)
 		{
-			month = "ôåâðàëü";
+			month = "Ñ„ÐµÐ²Ñ€Ð°Ð»ÑŒ";
 		}
 		else
 		{
-			month = "ôåâðàëÿ";
+			month = "Ñ„ÐµÐ²Ñ€Ð°Ð»Ñ";
 		}
 		break;
 	case 3:
 		if (key)
 		{
-			month = "ìàðò";
+			month = "Ð¼Ð°Ñ€Ñ‚";
 		}
 		else
 		{
-			month = "ìàðòà";
+			month = "Ð¼Ð°Ñ€Ñ‚Ð°";
 		}
 		break;
 	case 4:
 		if (key)
 		{
-			month = "àïðåëü";
+			month = "Ð°Ð¿Ñ€ÐµÐ»ÑŒ";
 		}
 		else
 		{
-			month = "àïðåëÿ";
+			month = "Ð°Ð¿Ñ€ÐµÐ»Ñ";
 		}
 		break;
 	case 5:
 		if (key)
 		{
-			month = "ìàé";
+			month = "Ð¼Ð°Ð¹";
 		}
 		else
 		{
-			month = "ìàÿ";
+			month = "Ð¼Ð°Ñ";
 		}
 		break;
 	case 6:
 		if (key)
 		{
-			month = "èþíü";
+			month = "Ð¸ÑŽÐ½ÑŒ";
 		}
 		else
 		{
-			month = "èþíÿ";
+			month = "Ð¸ÑŽÐ½Ñ";
 		}
 		break;
 	case 7:
 		if (key)
 		{
-			month = "èþëü";
+			month = "Ð¸ÑŽÐ»ÑŒ";
 		}
 		else
 		{
-			month = "èþëÿ";
+			month = "Ð¸ÑŽÐ»Ñ";
 		}
 		break;
 	case 8:
 		if (key)
 		{
-			month = "àâãóñò";
+			month = "Ð°Ð²Ð³ÑƒÑÑ‚";
 		}
 		else
 		{
-			month = "àâãóñòà";
+			month = "Ð°Ð²Ð³ÑƒÑÑ‚Ð°";
 		}
 		break;
 	case 9:
 		if (key)
 		{
-			month = "ñåíòÿáðü";
+			month = "ÑÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ";
 		}
 		else
 		{
-			month = "ñåíòÿáðÿ";
+			month = "ÑÐµÐ½Ñ‚ÑÐ±Ñ€Ñ";
 		}
 		break;
 	case 10:
 		if (key)
 		{
-			month = "îêòÿáðü";
+			month = "Ð¾ÐºÑ‚ÑÐ±Ñ€ÑŒ";
 		}
 		else
 		{
-			month = "îêòÿáðÿ";
+			month = "Ð¾ÐºÑ‚ÑÐ±Ñ€Ñ";
 		}
 		break;
 	case 11:
 		if (key)
 		{
-			month = "íîÿáðü";
+			month = "Ð½Ð¾ÑÐ±Ñ€ÑŒ";
 		}
 		else
 		{
-			month = "íîÿáðÿ";
+			month = "Ð½Ð¾ÑÐ±Ñ€Ñ";
 		}
 		break;
 	case 12:
 		if (key)
 		{
-			month = "äåêàáðü";
+			month = "Ð´ÐµÐºÐ°Ð±Ñ€ÑŒ";
 		}
 		else
 		{
-			month = "äåêàáðÿ";
+			month = "Ð´ÐµÐºÐ°Ð±Ñ€Ñ";
 		}
 		break;
 	default:
-		month = "Òàêîãî ìåñÿöà íå ñóùåñòâóåò!";
+		month = "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð¼ÐµÑÑÑ†Ð° Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 		break;
 	}
 
@@ -289,7 +289,7 @@ int HomeWork::MinNumberOfBanknotes(int* nominalValue, int length, int amountOfMo
 		if (amountOfMoney >= nominalValue[i])
 		{
 			numberOfBanknotes += NumberOfBanknotes(amountOfMoney, nominalValue[i]);
-			std::cout << "Êîëè÷åñòâî êóïþð íîìèíàëîì " << nominalValue[i] << " :" << NumberOfBanknotes(amountOfMoney, nominalValue[i]) << std::endl;
+			std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ " << nominalValue[i] << " :" << NumberOfBanknotes(amountOfMoney, nominalValue[i]) << std::endl;
 			amountOfMoney -= nominalValue[i] * NumberOfBanknotes(amountOfMoney, nominalValue[i]);
 		}
 	}
@@ -404,18 +404,18 @@ void HomeWork::Task1()
 	int medicalAlcohol = 0;
 	int firstAidKit = 0;
 
-	std::cout << "Ââåäèòå êîëè÷åñòâî ìåäèöèíñêîãî ñïèðòà (ìë): ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¼ÐµÐ´Ð¸Ñ†Ð¸Ð½ÑÐºÐ¾Ð³Ð¾ ÑÐ¿Ð¸Ñ€Ñ‚Ð° (Ð¼Ð»): ";
 	std::cin >> medicalAlcohol;
-	std::cout << "Ââåäèòå êîëè÷åñòâî àïòå÷åê (øò): ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð°Ð¿Ñ‚ÐµÑ‡ÐµÐº (ÑˆÑ‚): ";
 	std::cin >> firstAidKit;
 
 	if (medicalAlcohol >= 2000 && firstAidKit >= 5)
 	{
-		std::cout << "Ñíàðÿæåíèå ó ôåëüäøåðà äîñòàòî÷íî äëÿ âûõîäà íà ðàáîòó." << std::endl;
+		std::cout << "Ð¡Ð½Ð°Ñ€ÑÐ¶ÐµÐ½Ð¸Ðµ Ñƒ Ñ„ÐµÐ»ÑŒÐ´ÑˆÐµÑ€Ð° Ð´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð´Ð»Ñ Ð²Ñ‹Ñ…Ð¾Ð´Ð° Ð½Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ." << std::endl;
 	}
 	else
 	{
-		std::cout << "Ñíàðÿæåíèå ó ôåëüäøåðà ÍÅ äîñòàòî÷íî äëÿ âûõîäà íà ðàáîòó." << std::endl;
+		std::cout << "Ð¡Ð½Ð°Ñ€ÑÐ¶ÐµÐ½Ð¸Ðµ Ñƒ Ñ„ÐµÐ»ÑŒÐ´ÑˆÐµÑ€Ð° ÐÐ• Ð´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð´Ð»Ñ Ð²Ñ‹Ñ…Ð¾Ð´Ð° Ð½Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ." << std::endl;
 	}
 }
 
@@ -427,18 +427,18 @@ void HomeWork::Task2()
 	int speed = 0;
 	int height = 0;
 
-	std::cout << "Ââåäèòå ñêîðîñòü ñàìîë¸òà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ ÑÐ°Ð¼Ð¾Ð»Ñ‘Ñ‚Ð°: ";
 	std::cin >> speed;
-	std::cout << "Ââåäèòå âûñîòó ïîë¸òà ñàìîë¸òà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ Ð¿Ð¾Ð»Ñ‘Ñ‚Ð° ÑÐ°Ð¼Ð¾Ð»Ñ‘Ñ‚Ð°: ";
 	std::cin >> height;
 
 	if ((750 <= speed && speed <= 850) && (9000 <= height && height <= 9500))
 	{
-		std::cout << "Ñàìîë¸ò ëåòèò ïðàâèëüíûì ýøåëîíîì." << std::endl;
+		std::cout << "Ð¡Ð°Ð¼Ð¾Ð»Ñ‘Ñ‚ Ð»ÐµÑ‚Ð¸Ñ‚ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¼ ÑÑˆÐµÐ»Ð¾Ð½Ð¾Ð¼." << std::endl;
 	}
 	else
 	{
-		std::cout << "Ñàìîë¸ò ëåòèò íå â òîì ýøåëîíå." << std::endl;
+		std::cout << "Ð¡Ð°Ð¼Ð¾Ð»Ñ‘Ñ‚ Ð»ÐµÑ‚Ð¸Ñ‚ Ð½Ðµ Ð² Ñ‚Ð¾Ð¼ ÑÑˆÐµÐ»Ð¾Ð½Ðµ." << std::endl;
 	}
 }
 
@@ -450,24 +450,24 @@ void HomeWork::Task3()
 	int day = 0;
 	int startDay = 1;
 
-	std::cout << "Ïåðâûé äåíü ìàÿ ìåñÿöà: " << DayWeek(startDay) << std::endl;
-	std::cout << "Ââåäèòå äåíü ìàÿ ìåñÿöà (1 - 31): ";
+	std::cout << "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð´ÐµÐ½ÑŒ Ð¼Ð°Ñ Ð¼ÐµÑÑÑ†Ð°: " << DayWeek(startDay) << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÐ½ÑŒ Ð¼Ð°Ñ Ð¼ÐµÑÑÑ†Ð° (1 - 31): ";
 	std::cin >> day;
 	
 	if (1 <= day && day <= 31)
 	{
 		if (DayOffOrWorkDay(startDay, 31, day) || (1 <= day && day <= 5) || (8 <= day && day <= 10))
 		{
-			std::cout << "Âûõîäíîé äåíü." << std::endl;
+			std::cout << "Ð’Ñ‹Ñ…Ð¾Ð´Ð½Ð¾Ð¹ Ð´ÐµÐ½ÑŒ." << std::endl;
 		}
 		else
 		{
-			std::cout << "Ðàáî÷èé äåíü." << std::endl;
+			std::cout << "Ð Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ Ð´ÐµÐ½ÑŒ." << std::endl;
 		}
 	}
 	else
 	{
-		std::cout << "Òàêîãî äíÿ ìåñÿöà íå ñóùåñòâóåò!" << std::endl;
+		std::cout << "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð´Ð½Ñ Ð¼ÐµÑÑÑ†Ð° Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!" << std::endl;
 	}	
 }
 
@@ -479,24 +479,24 @@ void HomeWork::Task4()
 	int day = 0;
 	int startDay = Random(1, 8);
 
-	std::cout << "Ïåðâûé äåíü ìàÿ ìåñÿöà: " << DayWeek(startDay) << std::endl;
-	std::cout << "Ââåäèòå äåíü ìàÿ ìåñÿöà (1 - 31): ";
+	std::cout << "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð´ÐµÐ½ÑŒ Ð¼Ð°Ñ Ð¼ÐµÑÑÑ†Ð°: " << DayWeek(startDay) << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÐ½ÑŒ Ð¼Ð°Ñ Ð¼ÐµÑÑÑ†Ð° (1 - 31): ";
 	std::cin >> day;
 
 	if (1 <= day && day <= 31)
 	{
 		if (DayOffOrWorkDay(startDay, 31, day) || (1 <= day && day <= 5) || (8 <= day && day <= 10))
 		{
-			std::cout << DayWeek(WeekdayNumber(startDay, 31, day)) << ": Âûõîäíîé äåíü!" << std::endl;
+			std::cout << DayWeek(WeekdayNumber(startDay, 31, day)) << ": Ð’Ñ‹Ñ…Ð¾Ð´Ð½Ð¾Ð¹ Ð´ÐµÐ½ÑŒ!" << std::endl;
 		}
 		else
 		{
-			std::cout << DayWeek(WeekdayNumber(startDay, 31, day)) << ": Ðàáî÷èé äåíü." << std::endl;
+			std::cout << DayWeek(WeekdayNumber(startDay, 31, day)) << ": Ð Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ Ð´ÐµÐ½ÑŒ." << std::endl;
 		}
 	}
 	else
 	{
-		std::cout << "Òàêîãî äíÿ ìåñÿöà íå ñóùåñòâóåò!" << std::endl;
+		std::cout << "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð´Ð½Ñ Ð¼ÐµÑÑÑ†Ð° Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!" << std::endl;
 	}
 }
 
@@ -507,24 +507,24 @@ void HomeWork::Task5()
 
 	int price = 0;
 
-	std::cout << "Ââåäèòå öåíó òîâàðà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ½Ñƒ Ñ‚Ð¾Ð²Ð°Ñ€Ð°: ";
 	std::cin >> price;
 
-	std::cout << "Îòâåò: " << price;
+	std::cout << "ÐžÑ‚Ð²ÐµÑ‚: " << price;
 
 	if (EndOfNumber(price, 1) && price != 11)
 	{
-		std::cout << " ðóáëü" << std::endl;
+		std::cout << " Ñ€ÑƒÐ±Ð»ÑŒ" << std::endl;
 	}
 	else
 	{
 		if (price < 5 || ValidationCheck(price))
 		{
-			std::cout << " ðóáëÿ" << std::endl;
+			std::cout << " Ñ€ÑƒÐ±Ð»Ñ" << std::endl;
 		}
 		else
 		{
-			std::cout << " ðóáëåé" << std::endl;
+			std::cout << " Ñ€ÑƒÐ±Ð»ÐµÐ¹" << std::endl;
 		}
 	}	
 }
@@ -534,17 +534,17 @@ void HomeWork::Task6()
 	system("cls");
 	setlocale(LC_ALL, "rus");
 
-	int a = 0, b = 0, c = 0; // Ðàçìåðû ïåðâîé êîðîáêè 
-	int m = 0, n = 0, k = 0; // Ðàçìåðû âòîðîé êîðîáêè
+	int a = 0, b = 0, c = 0; // Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð¿ÐµÑ€Ð²Ð¾Ð¹ ÐºÐ¾Ñ€Ð¾Ð±ÐºÐ¸ 
+	int m = 0, n = 0, k = 0; // Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ ÐºÐ¾Ñ€Ð¾Ð±ÐºÐ¸
 	
-	std::cout << "Ââåäèòå ðàçìåð ïåðâîé êîðîáêè" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¿ÐµÑ€Ð²Ð¾Ð¹ ÐºÐ¾Ñ€Ð¾Ð±ÐºÐ¸" << std::endl;
 	std::cout << "A= ";
 	std::cin >> a;
 	std::cout << "B= ";
 	std::cin >> b;
 	std::cout << "C= ";
 	std::cin >> c;
-	std::cout << "Ââåäèòå ðàçìåð âòîðîé êîðîáêè" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ ÐºÐ¾Ñ€Ð¾Ð±ÐºÐ¸" << std::endl;
 	std::cout << "M= ";
 	std::cin >> m;
 	std::cout << "N= ";
@@ -563,17 +563,17 @@ void HomeWork::Task6()
 
 	if (a == m && b == n && c == k)
 	{
-		std::cout << "Êîðîáêè îäèíàêîâûå." << std::endl;
+		std::cout << "ÐšÐ¾Ñ€Ð¾Ð±ÐºÐ¸ Ð¾Ð´Ð¸Ð½Ð°ÐºÐ¾Ð²Ñ‹Ðµ." << std::endl;
 	}
 	else
 	{
 		if (a < m && b < n && c < k)
 		{
-			std::cout << "Ïåðâóþ êîðîáêó ìîæíî âëîæèòü âî âòîðóþ" << std::endl;
+			std::cout << "ÐŸÐµÑ€Ð²ÑƒÑŽ ÐºÐ¾Ñ€Ð¾Ð±ÐºÑƒ Ð¼Ð¾Ð¶Ð½Ð¾ Ð²Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð²Ð¾ Ð²Ñ‚Ð¾Ñ€ÑƒÑŽ" << std::endl;
 		}
 		else
 		{
-			std::cout << "Ïåðâóþ êîðîáêó ÍÅ âîçìîæíî âëîæèòü âî âòîðóþ" << std::endl;
+			std::cout << "ÐŸÐµÑ€Ð²ÑƒÑŽ ÐºÐ¾Ñ€Ð¾Ð±ÐºÑƒ ÐÐ• Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ð²Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð²Ð¾ Ð²Ñ‚Ð¾Ñ€ÑƒÑŽ" << std::endl;
 		}
 	}	
 }
@@ -587,7 +587,7 @@ void HomeWork::Task7()
 	int length = sizeof(nominalValue) / sizeof(nominalValue[0]);
 	int amountOfMoney = 0;
 
-	std::cout << "Ââåäèòå ñóììó: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑƒÐ¼Ð¼Ñƒ: ";
 	std::cin >> amountOfMoney;
 
 	if (100 <= amountOfMoney && amountOfMoney <= 150000)
@@ -597,16 +597,16 @@ void HomeWork::Task7()
 			int min = MinNumberOfBanknotes(nominalValue, length, amountOfMoney);
 
 			std::cout << "-------------------------------------------------" << std::endl;
-			std::cout << "Ìèíèìàëüíîå êîëè÷åñòâî êóïþð: " << min << std::endl;			
+			std::cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÑƒÐ¿ÑŽÑ€: " << min << std::endl;			
 		}
 		else
 		{
-			std::cout << "Ââåä¸ííàÿ ñóììà äîëæíà áûòü êðàòíà 100" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ñ‘Ð½Ð½Ð°Ñ ÑÑƒÐ¼Ð¼Ð° Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ ÐºÑ€Ð°Ñ‚Ð½Ð° 100" << std::endl;
 		}
 	}
 	else
 	{
-		std::cout << "Áàíêîìàò íå âûäà¸ò ñóììó áîëüøå 150 000" << std::endl;
+		std::cout << "Ð‘Ð°Ð½ÐºÐ¾Ð¼Ð°Ñ‚ Ð½Ðµ Ð²Ñ‹Ð´Ð°Ñ‘Ñ‚ ÑÑƒÐ¼Ð¼Ñƒ Ð±Ð¾Ð»ÑŒÑˆÐµ 150 000" << std::endl;
 	}
 }
 
@@ -617,11 +617,11 @@ void HomeWork::Task8()
 	
 	Date date;
 
-	std::cout << "Ââåäèòå ãîä ðîæäåíèÿ: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð¾Ð´ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
 	std::cin >> date.year;
-	std::cout << "Ââåäèòå ìåñÿö ðîæäåíèÿ: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼ÐµÑÑÑ† Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
 	std::cin >> date.month;
-	std::cout << "Ââåäèòå äåíü ðîæäåíèÿ: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÐ½ÑŒ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
 	std::cin >> date.day;
 	
 	if (DateOfBirth(date))
@@ -636,23 +636,23 @@ void HomeWork::Task8()
 		nowDate.month = localTime.tm_mon + 1;
 		nowDate.day = localTime.tm_mday;
 
-		std::cout << "Ñåãîäíÿ:       " << nowDate.day << " " << MonthYear(nowDate.month, false) << " " << nowDate.year << std::endl;
-		std::cout << "Äàòà ðîæäåíèÿ: " << date.day << " " << MonthYear(date.month, false) << " " << date.year << std::endl;
+		std::cout << "Ð¡ÐµÐ³Ð¾Ð´Ð½Ñ:       " << nowDate.day << " " << MonthYear(nowDate.month, false) << " " << nowDate.year << std::endl;
+		std::cout << "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: " << date.day << " " << MonthYear(date.month, false) << " " << date.year << std::endl;
 		std::cout << "-----------------------------------------" << std::endl;
-		std::cout << "Êîëè÷åñòâî ëåò: " << NumberOfYears(date) << std::endl;
+		std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð»ÐµÑ‚: " << NumberOfYears(date) << std::endl;
 
 		if (NumberOfYears(date) < 18)
 		{
-			std::cout << "Ïðîäàæà àëêîãîëÿ ÇÀÏÐÅÙÅÍÀ!" << std::endl;
+			std::cout << "ÐŸÑ€Ð¾Ð´Ð°Ð¶Ð° Ð°Ð»ÐºÐ¾Ð³Ð¾Ð»Ñ Ð—ÐÐŸÐ Ð•Ð©Ð•ÐÐ!" << std::endl;
 		}
 		else
 		{
-			std::cout << "Ïðîäàæà àëêîãîëÿ ÐÀÇÐÅØÅÍÀ!" << std::endl;
+			std::cout << "ÐŸÑ€Ð¾Ð´Ð°Ð¶Ð° Ð°Ð»ÐºÐ¾Ð³Ð¾Ð»Ñ Ð ÐÐ—Ð Ð•Ð¨Ð•ÐÐ!" << std::endl;
 		}
 	}
 	else
 	{
-		std::cout << "Òàêîé äàòû ðîæäåíèÿ íå ìîæåò áûòü!!!" << std::endl;
+		std::cout << "Ð¢Ð°ÐºÐ¾Ð¹ Ð´Ð°Ñ‚Ñ‹ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ!!!" << std::endl;
 	}
 }
 
@@ -665,19 +665,19 @@ void HomeWork::Task9()
 	Point2D b;
 	Point2D c;
 
-	std::cout << "Ââåäèòå êîîðäèíàòû òî÷êè À:" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð:" << std::endl;
 	std::cout << "x1 = ";
 	std::cin >> a.x;
 	std::cout << "y1 = ";
 	std::cin >> a.y;
 
-	std::cout << "Ââåäèòå êîîðäèíàòû òî÷êè B:" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‚Ð¾Ñ‡ÐºÐ¸ B:" << std::endl;
 	std::cout << "x2 = ";
 	std::cin >> b.x;
 	std::cout << "y2 = ";
 	std::cin >> b.y;
 
-	std::cout << "Ââåäèòå êîîðäèíàòû òî÷êè C:" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‚Ð¾Ñ‡ÐºÐ¸ C:" << std::endl;
 	std::cout << "x3 = ";
 	std::cin >> c.x;
 	std::cout << "y3 = ";
@@ -685,7 +685,7 @@ void HomeWork::Task9()
 	
 	if (CoincidenceOfPoints(a,b) || CoincidenceOfPoints(a,c) || CoincidenceOfPoints(b,c))
 	{
-		std::cout << "Ââåä¸ííûå òî÷êè îáðàçîâûâàòü òðåóãîëüíèê íå ìîãóò!" << std::endl;
+		std::cout << "Ð’Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚!" << std::endl;
 	}
 	else
 	{
@@ -696,11 +696,11 @@ void HomeWork::Task9()
 
 			if (k1 != k2)
 			{
-				std::cout << "Ââåä¸ííûå òî÷êè ìîãóò îáðàçîâûâàòü òðåóãîëüíèê!" << std::endl;
+				std::cout << "Ð’Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð¼Ð¾Ð³ÑƒÑ‚ Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº!" << std::endl;
 			}
 			else
 			{
-				std::cout << "Ââåä¸ííûå òî÷êè îáðàçîâûâàòü òðåóãîëüíèê ÍÅ ìîãóò!" << std::endl;
+				std::cout << "Ð’Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº ÐÐ• Ð¼Ð¾Ð³ÑƒÑ‚!" << std::endl;
 			}
 		}
 		else
@@ -709,11 +709,11 @@ void HomeWork::Task9()
 				((a.x != b.x) && (a.x == c.x) && (b.x != c.x)) || 
 				((a.x != b.x) && (a.x != c.x) && (b.x == c.x)))
 			{
-				std::cout << "Ââåä¸ííûå òî÷êè ìîãóò îáðàçîâûâàòü òðåóãîëüíèê!" << std::endl;
+				std::cout << "Ð’Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð¼Ð¾Ð³ÑƒÑ‚ Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº!" << std::endl;
 			}
 			else
 			{
-				std::cout << "Ââåä¸ííûå òî÷êè îáðàçîâûâàòü òðåóãîëüíèê ÍÅ ìîãóò!" << std::endl;
+				std::cout << "Ð’Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº ÐÐ• Ð¼Ð¾Ð³ÑƒÑ‚!" << std::endl;
 			}
 		}
 	}	
