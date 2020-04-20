@@ -2,40 +2,13 @@
 
 bool HomeWork::DayOffOrWorkDay(int weekDayStartMonth, int numberOfDaysInMonth, int dayOfMonth)
 {
-	if (1 <= weekDayStartMonth && weekDayStartMonth <= 7)
+	if (WeekdayNumber(weekDayStartMonth, numberOfDaysInMonth, dayOfMonth) == 7 || 
+		WeekdayNumber(weekDayStartMonth, numberOfDaysInMonth, dayOfMonth) == 6)
 	{
-		if (1 <= numberOfDaysInMonth && numberOfDaysInMonth <= 31)
-		{
-			if (1 <= dayOfMonth && dayOfMonth <= numberOfDaysInMonth)
-			{
-				unsigned short k = weekDayStartMonth;
-
-				for (unsigned short i = 1; i <= numberOfDaysInMonth; i++)
-				{
-					if (i == dayOfMonth)
-					{
-						if (k == 7 || k == 6)
-						{
-							return true;
-						}
-
-						return false;
-					}
-
-					if (k == 7)
-					{
-						k = 1;
-					}
-					else
-					{
-						k++;
-					}
-				}
-			}
-		}
+		return true;
 	}
-	
-	throw std::exception("Error!!!");
+
+	return false;
 }
 
 int HomeWork::WeekdayNumber(int weekDayStartMonth, int numberOfDaysInMonth, int dayOfMonth)
@@ -46,23 +19,15 @@ int HomeWork::WeekdayNumber(int weekDayStartMonth, int numberOfDaysInMonth, int 
 		{
 			if (1 <= dayOfMonth && dayOfMonth <= numberOfDaysInMonth)
 			{
-				unsigned short k = weekDayStartMonth;
+				int k = (dayOfMonth + weekDayStartMonth + 6) % 7;
 
-				for (unsigned short i = 1; i <= numberOfDaysInMonth; i++)
+				if (k != 0)
 				{
-					if (i == dayOfMonth)
-					{
-						return k;
-					}
-
-					if (k == 7)
-					{
-						k = 1;
-					}
-					else
-					{
-						k++;
-					}
+					return k;
+				}
+				else
+				{
+					return 7;
 				}
 			}
 		}
@@ -81,7 +46,7 @@ int HomeWork::Random(int min, int max)
 
 std::string HomeWork::DayWeek(int day)
 {
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	std::string strDay = "";
 
@@ -118,7 +83,7 @@ std::string HomeWork::DayWeek(int day)
 
 std::string HomeWork::MonthYear(int monthNumber, bool key)
 {
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	std::string month = "";
 	key = false;
@@ -282,15 +247,18 @@ int HomeWork::NumberOfBanknotes(int amountOfMoney, int nominalValue)
 
 int HomeWork::MinNumberOfBanknotes(int* nominalValue, int length, int amountOfMoney)
 {
+	setlocale(LC_ALL, "Russian.utf8");
+
 	int numberOfBanknotes = 0;
 	
 	for (int i = 0; i < length; i++)
 	{
 		if (amountOfMoney >= nominalValue[i])
 		{
-			numberOfBanknotes += NumberOfBanknotes(amountOfMoney, nominalValue[i]);
-			std::cout << "Количество купюр номиналом " << nominalValue[i] << " :" << NumberOfBanknotes(amountOfMoney, nominalValue[i]) << std::endl;
-			amountOfMoney -= nominalValue[i] * NumberOfBanknotes(amountOfMoney, nominalValue[i]);
+			int K = amountOfMoney / nominalValue[i];
+			numberOfBanknotes += K;
+			std::cout << "Количество купюр номиналом " << nominalValue[i] << " :" << K << std::endl;
+			amountOfMoney = amountOfMoney % nominalValue[i];
 		}
 	}
 
@@ -348,44 +316,38 @@ bool HomeWork::DateOfBirth(Date date)
 	return false;
 }
 
-int HomeWork::NumberOfYears(Date date)
+int HomeWork::NumberOfYears(Date date, Date nowDate)
 {
-	time_t now = time(0);
-	tm localTime;
-	localtime_s(&localTime, &now);
-
-	int nowYear = localTime.tm_year + 1900;
-	int nowMonth = localTime.tm_mon + 1;
-	int nowDay = localTime.tm_mday;
-
-	if (nowYear > date.year)
+	if (nowDate.year > date.year)
 	{
-		int K = (nowYear - 1) - date.year;
+		int integerYears = (nowDate.year - 1) - date.year;
 						
-		if (nowMonth - date.month > 0)
+		if (nowDate.month - date.month > 0)
 		{
-			K++;
+			integerYears++;
 		}
-		
-		if (nowMonth - date.month == 0)
+		else
 		{
-			if (nowDay - date.day > 0)
+			if (nowDate.month - date.month == 0)
 			{
-				K++;
-			}			
-		}
+				if (nowDate.day - date.day > 0)
+				{
+					integerYears++;
+				}
+			}
+		}		
 
-		return K;
+		return integerYears;
 	}	
 
 	return 0;
 }
 
-int HomeWork::AngularCoefficient(Point2D point1, Point2D point2)
+float HomeWork::AngularCoefficient(Point2D point1, Point2D point2)
 {
 	if (point2.x - point1.x != 0)
 	{
-		return (point2.y - point1.y) / (point2.x - point1.x);
+		return (float)(point2.y - point1.y) / (float)(point2.x - point1.x);
 	}
 
 	throw std::exception("Error!!!");
@@ -399,7 +361,7 @@ bool HomeWork::CoincidenceOfPoints(Point2D point1, Point2D point2)
 void HomeWork::Task1()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	int medicalAlcohol = 0;
 	int firstAidKit = 0;
@@ -409,7 +371,7 @@ void HomeWork::Task1()
 	std::cout << "Введите количество аптечек (шт): ";
 	std::cin >> firstAidKit;
 
-	if (medicalAlcohol >= 2000 && firstAidKit >= 5)
+	if (medicalAlcohol >= 2000 || firstAidKit >= 5)
 	{
 		std::cout << "Снаряжение у фельдшера достаточно для выхода на работу." << std::endl;
 	}
@@ -422,7 +384,7 @@ void HomeWork::Task1()
 void HomeWork::Task2()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 	
 	int speed = 0;
 	int height = 0;
@@ -445,7 +407,7 @@ void HomeWork::Task2()
 void HomeWork::Task3()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	int day = 0;
 	int startDay = 1;
@@ -474,7 +436,7 @@ void HomeWork::Task3()
 void HomeWork::Task4()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	int day = 0;
 	int startDay = Random(1, 8);
@@ -503,7 +465,7 @@ void HomeWork::Task4()
 void HomeWork::Task5()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	int price = 0;
 
@@ -532,7 +494,7 @@ void HomeWork::Task5()
 void HomeWork::Task6()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	int a = 0, b = 0, c = 0; // Размеры первой коробки 
 	int m = 0, n = 0, k = 0; // Размеры второй коробки
@@ -581,7 +543,7 @@ void HomeWork::Task6()
 void HomeWork::Task7()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	int nominalValue[] = { 5000, 2000, 1000, 500, 200, 100 };
 	int length = sizeof(nominalValue) / sizeof(nominalValue[0]);
@@ -613,7 +575,7 @@ void HomeWork::Task7()
 void HomeWork::Task8()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 	
 	Date date;
 
@@ -639,9 +601,9 @@ void HomeWork::Task8()
 		std::cout << "Сегодня:       " << nowDate.day << " " << MonthYear(nowDate.month, false) << " " << nowDate.year << std::endl;
 		std::cout << "Дата рождения: " << date.day << " " << MonthYear(date.month, false) << " " << date.year << std::endl;
 		std::cout << "-----------------------------------------" << std::endl;
-		std::cout << "Количество лет: " << NumberOfYears(date) << std::endl;
+		std::cout << "Количество лет: " << NumberOfYears(date, nowDate) << std::endl;
 
-		if (NumberOfYears(date) < 18)
+		if (NumberOfYears(date, nowDate) < 18)
 		{
 			std::cout << "Продажа алкоголя ЗАПРЕЩЕНА!" << std::endl;
 		}
@@ -659,7 +621,7 @@ void HomeWork::Task8()
 void HomeWork::Task9()
 {
 	system("cls");
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian.utf8");
 
 	Point2D a;
 	Point2D b;
@@ -691,10 +653,7 @@ void HomeWork::Task9()
 	{
 		if ((a.x != b.x) && (a.x != c.x) && (b.x != c.x))
 		{
-			int k1 = AngularCoefficient(a, b);
-			int k2 = AngularCoefficient(a, c);
-
-			if (k1 != k2)
+			if ((a.y - b.y) * (a.x - c.x) != (a.y - c.y) * (a.x - b.x))
 			{
 				std::cout << "Введённые точки могут образовывать треугольник!" << std::endl;
 			}

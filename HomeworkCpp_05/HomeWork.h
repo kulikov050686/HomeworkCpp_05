@@ -61,10 +61,10 @@ private:
 	bool DateOfBirth(Date date);
 
 	/// Определяет количество полных лет
-	int NumberOfYears(Date date);
+	int NumberOfYears(Date date, Date nowDate);
 
 	/// Определяет угловой коэффициент прямой
-	int AngularCoefficient(Point2D point1, Point2D point2);
+	float AngularCoefficient(Point2D point1, Point2D point2);
 
 	/// Определяет совпадают ли координаты двух точек
 	bool CoincidenceOfPoints(Point2D point1, Point2D point2);
